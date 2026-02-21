@@ -29,3 +29,12 @@ Optional skill bonus parameter enables reward sensitivity experiments.
 - PPO vs Random baseline
 - Reward sensitivity analysis
 - Action distribution analysis
+
+
+Experiment: Skill Amplification in Exploitation
+
+I introduced an exploit_skill_multiplier parameter to test how strongly skill influences resource generation.
+With the baseline multiplier (1.0), the agent preferred stable “safe” actions with minimal exploitation.
+When the multiplier was increased (3.0), the agent shifted toward an exploit–rest cycle to maximize returns.
+This demonstrates that environment transition dynamics can dominate reward shaping in driving policy behavior.
+The experiment highlights how structural changes in state-action mechanics significantly alter learned strategies.
